@@ -1,0 +1,110 @@
+/* Reset and base styles */
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+  background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+  min-height:100vh;
+  display:flex;align-items:center;justify-content:center;
+  padding:20px;line-height:1.6
+}
+
+/* Container */
+.container{
+  background:rgba(29, 27, 27, 0.95);
+  backdrop-filter:blur(10px);
+  border-radius:16px;
+  padding:25px;
+  box-shadow:0 15px 35px rgba(0,0,0,.1);
+  width:100%;max-width:400px;
+  border:1px solid rgba(255,255,255,.2);
+  animation:fadeInUp .6s ease-out
+}
+
+@keyframes fadeInUp{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* Heading */
+h2{
+  color:#eff1f4;text-align:center;
+  margin-bottom:25px;font-size:1.8em;font-weight:600;
+  position:relative
+}
+h2::after{
+  content:'';position:absolute;bottom:-10px;left:50%;
+  transform:translateX(-50%);
+  width:60px;height:3px;
+  background:linear-gradient(45deg,#afbaeb,#1f122c);
+  border-radius:2px
+}
+
+/* Form */
+form{display:flex;flex-direction:column;gap:18px}
+.form-group{display:flex;flex-direction:column;position:relative}
+label{color:#f3f6f9;font-weight:600;margin-bottom:5px;font-size:.9em;transition:.3s color}
+
+/* Inputs */
+input[type="text"],input[type="date"]{
+  padding:12px 16px;border:2px solid #e1e8ed;border-radius:10px;
+  font-size:14px;transition:.3s all;
+  background:#f8f9fa;color:#2c3e50;outline:none
+}
+input:focus{
+  border-color:#667eea;background:#fff;
+  box-shadow:0 0 0 3px rgba(102,126,234,.1);
+  transform:translateY(-2px)
+}
+input:hover{border-color:#bdc3c7;background:#fff}
+input::placeholder{color:#95a5a6;font-style:italic}
+
+/* Button */
+.btn{
+  background:linear-gradient(45deg,#667eea,#764ba2);
+  color:#fff;padding:14px 28px;border:0;border-radius:10px;
+  font:600 14px inherit;cursor:pointer;
+  transition:.3s all;margin-top:8px;
+  text-transform:uppercase;letter-spacing:1px;
+  position:relative;overflow:hidden
+}
+.btn::before{
+  content:'';position:absolute;top:0;left:-100%;
+  width:100%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);
+  transition:.5s left
+}
+.btn:hover::before{left:100%}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(102,126,234,.3)}
+.btn:active{transform:translateY(-1px);box-shadow:0 5px 15px rgba(102,126,234,.3)}
+
+/* Back link */
+.back-link{text-align:center;margin-top:18px;padding-top:15px;border-top:1px solid #e1e8ed}
+.back-link a{
+  color:#667eea;text-decoration:none;font-weight:500;
+  transition:.3s all;padding:8px 16px;border-radius:8px;display:inline-block
+}
+.back-link a:hover{
+  background:rgba(102,126,234,.1);color:#764ba2;transform:translateX(-5px)
+}
+
+/* Responsive */
+@media (max-width:600px){
+  .container{padding:20px;margin:10px;max-width:320px}
+  h2{font-size:1.6em}
+  input[type],.btn{padding:10px 14px;font-size:13px}
+  .btn{padding:12px 24px}
+}
+
+/* Accessibility */
+input:focus,.btn:focus{outline:2px solid #667eea;outline-offset:2px}
+
+/* Button loading */
+.btn.loading{opacity:.7;cursor:not-allowed;pointer-events:none}
+.btn.loading::after{
+  content:'';position:absolute;width:16px;height:16px;
+  border:2px solid transparent;border-top-color:#fff;border-radius:50%;
+  animation:spin 1s linear infinite;top:50%;left:50%;transform:translate(-50%,-50%)
+}
+
+@keyframes spin{0%{transform:translate(-50%,-50%) rotate(0)}100%{transform:translate(-50%,-50%) rotate(360deg)}}

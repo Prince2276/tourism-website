@@ -1,0 +1,65 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Times New Roman", Times, serif;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.video-background {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  z-index: -1; object-fit: cover; pointer-events: none;
+}
+.video-overlay {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5); z-index: 0;
+}
+.container {
+  position: relative; z-index: 1;
+  display: flex; justify-content: center; align-items: center;
+  height: 100vh; padding: 20px;
+}
+.register-form {
+  background: rgb(29,29,29);
+  padding: 40px; border-radius: 20px;
+  box-shadow: 0 10px 30px rgb(0,0,0);
+  width: 100%; max-width: 400px;
+  border: 1px solid rgba(255,255,255,0.86);
+}
+h2 { text-align: center; margin-bottom: 30px; color: #fff; font-size: 28px; font-weight: 600; }
+.form-group { margin-bottom: 20px; }
+label {
+  display: block; margin-bottom: 8px; color: #fff;
+  font-weight: 500; font-size: 16px;
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+  width: 100%; padding: 15px;
+  border: none; background: #fffcfc;
+  border-radius: 10px; font-size: 16px; outline: none;
+  transition: all 0.3s;
+}
+input:focus {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(207,163,245,0.2);
+}
+.password-container { position: relative; }
+.toggle-password {
+  position: absolute; right: 15px; top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer; font-size: 18px; opacity: 0.6;
+}
+.btn {
+  width: 100%; padding: 15px;
+  background: #8B45C7; color: #fff;
+  border: none; border-radius: 10px;
+  font-size: 18px; font-weight: 600; cursor: pointer;
+  transition: all 0.3s; margin-top: 10px;
+}
+.btn:hover {
+  background: #7A3BB0; transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(139,69,199,0.3);
+}
+.login-link {
+  text-align: center; margin-top: 20px; color: #ffffff; font-size: 14px;
+}
+.login-link a { color: #8000ff; text-decoration: none; font-weight: 500; }
+.login-link a:hover { text-decoration: underline;color: #ffff80; }
