@@ -21,7 +21,9 @@ The website enables users to explore destinations, view travel packages, and sub
 
 ## About the Project  
 This project is a full-stack web application built using Eclipse IDE with front-end technologies (HTML, CSS, JavaScript) combined with Java servlets/JSP for the back-end, and MySQL for database.  
-It allows users to browse tourist destinations, review travel packages, and book the tours. Also allow the admin to add, update, delete and view the tours and hotels, and check the bookings. Architected with a modular and responsive design to ensure a good user experience across devices.
+It allows users to browse tourist destinations, review travel packages, and book the tours. 
+Also allow the admin to add, update, delete and view the tours and hotels, and check the bookings. 
+Architected with a modular and responsive design to ensure a good user experience across devices.
 
 ---
 
