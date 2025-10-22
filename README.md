@@ -108,7 +108,9 @@ http://localhost:8080/tourism-website
 
 Replace port/context path as configured in your workspace.
 
-🗣️ Usage
+---
+
+## 🗣️ Usage
 
 Explore the landing page to view destinations and packages.
 
@@ -120,7 +122,9 @@ Use the “Contact” or “Enquiry” form to submit your travel interest.
 
 Check the MySQL database to view enquiries and package data.
 
-📋 Future Enhancements
+---
+
+## 📋 Future Enhancements
 
 Here are some ideas to improve or extend the project:
 
@@ -136,9 +140,16 @@ Mobile-first UI or move to a front-end framework (React, Angular, Vue).
 
 Deploy it to a cloud hosting platform (AWS, Heroku, Azure) with CI/CD.
 
+
 👨‍💻 Author
 
 Prince Burnwal
 📧 princeburnwal20@gmail.com
 
 🌐 github.com/Prince2276
+
+💼 linkedin.com/in/prince-burnwal
+
+🪪 License
+
+This project is licensed under the MIT License — feel free to use or modify it for learning purposes.
