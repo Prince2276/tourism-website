@@ -27,7 +27,7 @@ Architected with a modular and responsive design to ensure a good user experienc
 
 ---
 
-## Features  
+## 🚀 Features
 - Browse a curated list of destinations with key information.  
 - View travel packages (package name, description, cost, destination).  
 - Contact form for users to submit enquiries or requests.  
@@ -38,7 +38,7 @@ Architected with a modular and responsive design to ensure a good user experienc
 
 ---
 
-## Technologies Used  
+## 🛠️ Technologies Used  
 - **Front-end**: HTML5, CSS3, JavaScript  
 - **Back-end**: Java (Servlets/JSP)  
 - **Database**: MySQL  
@@ -48,7 +48,7 @@ Architected with a modular and responsive design to ensure a good user experienc
 
 ---
 
-## Project Structure  
+## 🗂️ Project Structure  
 Here is a typical layout of the project:
 
 tourism-website/
@@ -67,83 +67,3 @@ tourism-website/
 ├── README.md
 └── … (Eclipse / build config)
 
-yaml
-Copy code
-
----
-
-## Installation & Setup  
-Follow these steps to run the project locally:
-
-1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/Prince2276/tourism-website.git
-   cd tourism-website
-Import into Eclipse
-
-In Eclipse: File → Import → Existing Projects into Workspace
-
-Select the cloned tourism-website folder
-
-Ensure it builds without errors
-
-Create and configure MySQL database
-
-Create a database (e.g., tourism_db)
-
-sql
-Copy code
-CREATE DATABASE tourism_db;
-Import any provided SQL schema or create tables for destinations, packages, enquiries, etc.
-
-Update your database connection configuration (JDBC URL, username, password) in your DAO/config file.
-
-Configure server runtime
-
-In Eclipse: Right-click project → Properties → Targeted Runtimes → select your installed Apache Tomcat server
-
-Deploy the project (e.g., via Run on Server)
-
-Access the application
-
-Open a browser and navigate to:
-http://localhost:8080/tourism-website
-
-Replace port/context path as configured in your workspace.
-
-Usage
-Explore the landing page to view destinations and packages.
-
-Click on a travel package to view details (description, cost, destination).
-
-Use the “Contact” or “Enquiry” form to submit your travel interest.
-
-(If implemented) Admin can log in to add or update packages and destination information.
-
-Check the MySQL database to view enquiries and package data.
-
-Future Enhancements
-Here are some ideas to improve or extend the project:
-
-User authentication (login / registration) for travellers and admin.
-
-Full booking flow (select package, book, payment integration).
-
-Admin dashboard with analytics (popular destinations, enquiry stats).
-
-Image upload for destinations/packages and dynamic gallery.
-
-Mobile-first UI or move to a front-end framework (React, Angular, Vue).
-
-Deploy it to a cloud hosting platform (AWS, Heroku, Azure) with CI/CD.
-
-Author
-Name: Prince Burnwal
-Email: princeburnwal20@gmail.com
-GitHub: github.com/Prince2276
-LinkedIn: linkedin.com/in/prince-burnwal
-
-License
-This project is licensed under the MIT License — see the LICENSE file for details.
-
-If you find this project useful or have suggestions, feel free to ⭐ the repository, fork it and contribute. Happy coding and happy travels!
