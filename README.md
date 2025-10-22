@@ -33,7 +33,7 @@ Architected with a modular and responsive design to ensure a good user experienc
 - Contact form for users to submit enquiries or requests.  
 - Back-end logic to handle user requests and database operations.  
 - MySQL integration for storing packages, destinations, enquiries.  
-- Responsive UI design to support mobile and desktop viewing.  
+- Responsive UI design to support desktop viewing.  
 - Built to be extendable for admin functionalities (add/update packages) in future.
 
 ---
@@ -113,14 +113,11 @@ Replace port/context path as configured in your workspace.
 ## 🗣️ Usage
 
 * Explore the landing page to view destinations and packages.
-
 * Click on a travel package to view details (description, cost, destination).
-
+* User authentication (login / registration) for travellers and admin.
 * Use the “Contact” or “Enquiry” form to submit your travel interest.
-
-(If implemented) Admin can log in to add or update packages and destination information.
-
-Check the MySQL database to view enquiries and package data.
+* Admin can log in to add or update packages and destination information.
+* Check the MySQL database to view enquiries and package data.
 
 ---
 
@@ -128,18 +125,11 @@ Check the MySQL database to view enquiries and package data.
 
 Here are some ideas to improve or extend the project:
 
-User authentication (login / registration) for travellers and admin.
-
-Full booking flow (select package, book, payment integration).
-
-Admin dashboard with analytics (popular destinations, enquiry stats).
-
-Image upload for destinations/packages and dynamic gallery.
-
-Mobile-first UI or move to a front-end framework (React, Angular, Vue).
-
-Deploy it to a cloud hosting platform (AWS, Heroku, Azure) with CI/CD.
-
+* Full booking flow (select package, book, payment integration).
+* Admin dashboard with analytics (popular destinations, enquiry stats).
+* Image upload for destinations/packages and dynamic gallery.
+* Mobile-first UI or move to a front-end framework (React, Angular, Vue).
+* Deploy it to a cloud hosting platform (AWS, Heroku, Azure) with CI/CD.
 
 👨‍💻 Author
 
