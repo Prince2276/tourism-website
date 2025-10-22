@@ -67,3 +67,78 @@ tourism-website/
 ├── README.md
 └── … (Eclipse / build config)
 
+## ⚙️ Installation & Setup  
+
+Follow these steps to run the project locally:
+
+1️⃣ **Clone the repository**  
+   ```bash
+   git clone https://github.com/Prince2276/tourism-website.git
+   cd tourism-website
+
+2️⃣ Import into Eclipse
+
+In Eclipse: File → Import → Existing Projects into Workspace
+
+Select the cloned tourism-website folder
+
+Ensure it builds without errors
+
+3️⃣ Create and configure MySQL database
+
+Create a database (e.g., tourism_db)
+
+CREATE DATABASE tourism_db;
+
+
+Import any provided SQL schema or create tables for destinations, packages, enquiries, etc.
+
+Update your database connection configuration (JDBC URL, username, password) in your DAO/config file.
+
+4️⃣ Configure server runtime
+
+In Eclipse: Right-click project → Properties → Targeted Runtimes → select your installed Apache Tomcat server
+
+Deploy the project (e.g., via Run on Server)
+
+5️⃣ Access the application
+
+Open a browser and navigate to:
+http://localhost:8080/tourism-website
+
+Replace port/context path as configured in your workspace.
+
+🗣️ Usage
+
+Explore the landing page to view destinations and packages.
+
+Click on a travel package to view details (description, cost, destination).
+
+Use the “Contact” or “Enquiry” form to submit your travel interest.
+
+(If implemented) Admin can log in to add or update packages and destination information.
+
+Check the MySQL database to view enquiries and package data.
+
+📋 Future Enhancements
+
+Here are some ideas to improve or extend the project:
+
+User authentication (login / registration) for travellers and admin.
+
+Full booking flow (select package, book, payment integration).
+
+Admin dashboard with analytics (popular destinations, enquiry stats).
+
+Image upload for destinations/packages and dynamic gallery.
+
+Mobile-first UI or move to a front-end framework (React, Angular, Vue).
+
+Deploy it to a cloud hosting platform (AWS, Heroku, Azure) with CI/CD.
+
+👨‍💻 Author
+
+Prince Burnwal
+📧 princeburnwal20@gmail.com
+
+🌐 github.com/Prince2276
