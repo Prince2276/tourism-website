@@ -108,15 +108,15 @@ http://localhost:8080/tourism-website
 
 Replace port/context path as configured in your workspace.
 
----
+```
 
 ## 🗣️ Usage
 
-Explore the landing page to view destinations and packages.
+* Explore the landing page to view destinations and packages.
 
-Click on a travel package to view details (description, cost, destination).
+* Click on a travel package to view details (description, cost, destination).
 
-Use the “Contact” or “Enquiry” form to submit your travel interest.
+* Use the “Contact” or “Enquiry” form to submit your travel interest.
 
 (If implemented) Admin can log in to add or update packages and destination information.
 
